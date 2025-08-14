@@ -32,9 +32,30 @@
 
 
 
+
 ## July 27, 2025
 
+### Getter Functions & Contract Improvements
+- Added getter functions to FundMe.sol for better testability and frontend integration:
+  - `getFunders()`: Returns all funder addresses.
+  - `getFundersWithAmounts()`: Returns arrays of all funder addresses and their funded amounts.
+  - `getFundersCount()`: Returns the total number of funders.
+  - `getTotalFunded()`: Returns the sum of all funds contributed by every funder.
+- Updated tests in FundMeTest.t.sol to cover these new getters, including edge cases and console output for frontend simulation.
+- Improved contract documentation and README.md to reflect new features.
+
+---
+
 ## August 1, 2025
+---
+
+## August 14, 2025
+
+### Final Integration & Documentation
+- Verified all getter functions work as expected and are gas-optimized for off-chain use.
+- Updated README.md to document all new contract functions and their purpose.
+- Ensured all tests pass and console output matches frontend requirements.
+- Pushed latest changes to repository.
 
 ### Gas Snapshots & Storage Optimization Mastery
 

@@ -148,6 +148,7 @@ A library providing:
 
 ### Key Functions
 
+
 ```solidity
 // Fund the contract (payable)
 function fund() public payable
@@ -156,11 +157,29 @@ function fund() public payable
 function withdraw() public onlyOwner
 
 // Get funded amount for an address
-function getAddressToAmountFunded(address fundingAddress) external view returns (uint256)
+function getAddressToAmountFunded(address fundingAddress) public view returns (uint256)
 
-// Get list of funders
-function getFunder(uint256 index) external view returns (address)
+// Get a funder by index
+function getFunder(uint256 index) public view returns (address)
+
+// Get all funder addresses
+function getFunders() public view returns (address[] memory)
+
+// Get all funder addresses and their corresponding funded amounts
+function getFundersWithAmounts() public view returns (address[] memory, uint256[] memory)
+
+// Get the total number of funders
+function getFundersCount() public view returns (uint256)
+
+// Get the sum of all funds contributed by every funder
+function getTotalFunded() public view returns (uint256)
 ```
+
+**Function Summaries:**
+- `getFunders()`: Returns all funder addresses.
+- `getFundersWithAmounts()`: Returns arrays of all funder addresses and their funded amounts.
+- `getFundersCount()`: Returns the total number of funders.
+- `getTotalFunded()`: Returns the sum of all funds contributed by every funder.
 
 ## 🔨 Development Commands
 
