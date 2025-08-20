@@ -11,7 +11,7 @@ error FundMe__NotOwner();
 
 /**
  * @title A sample Funding Contract
- * @author cyhperpulse.base.eth
+ * @author cypherpulse.base.eth
  * @notice This contract is for creating a sample funding contract
  * @dev This implements price feeds as our library
  */
@@ -106,7 +106,7 @@ contract FundMe {
         return s_funders[index];
     }
 
-    /// @notice Returns the list of funders
+    /// @dev Returns the list of funders
     function getFunders() public view returns (address[] memory) {
         return s_funders;
     }
@@ -119,7 +119,7 @@ contract FundMe {
         return s_priceFeed;
     }
 
-    /// @notice Returns arrays of all funder addresses and their corresponding funded amounts
+    /// @dev Returns arrays of all funder addresses and their corresponding funded amounts
     function getFundersWithAmounts() public view returns (address[] memory, uint256[] memory) {
         address[] memory funders = s_funders;
         uint256[] memory amounts = new uint256[](funders.length);
@@ -129,12 +129,12 @@ contract FundMe {
         return (funders, amounts);
     }
 
-    /// @notice Returns the total number of funders
+    /// @dev Returns the total number of funders
     function getFundersCount() public view returns (uint256) {
         return s_funders.length;
     }
 
-    /// @notice Returns the sum of all funds contributed by every funder
+    /// @dev Returns the sum of all funds contributed by every funder
     function getTotalFunded() public view returns (uint256 total) {
         for (uint256 i = 0; i < s_funders.length; i++) {
             total += s_addressToAmountFunded[s_funders[i]];

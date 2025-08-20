@@ -1,6 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.30;
 
+
+/**
+ * @title Price Converter Library
+ * @author cypherpulse.base.eth
+ * @notice This library provides functions to convert between ETH and USD
+ * @dev This implements price feeds as our library
+ */
+
 import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
 
 library PriceConverter {
