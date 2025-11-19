@@ -12,6 +12,8 @@ abstract contract CodeConstants {
                                CHAIN IDS
     //////////////////////////////////////////////////////////////*/
     uint256 public constant ETH_SEPOLIA_CHAIN_ID = 11155111;
+    uint256 public constant BASE_SEPOLIA_CHAIN_ID = 84532;
+    uint256 public constant BASE_MAINNET_CHAIN_ID = 8453;
     // uint256 public constant ZKSYNC_SEPOLIA_CHAIN_ID = 300; // Already declared in ZkSyncChainChecker
     uint256 public constant LOCAL_CHAIN_ID = 31337;
 }
@@ -41,6 +43,8 @@ contract HelperConfig is CodeConstants, Script {
     //////////////////////////////////////////////////////////////*/
     constructor() {
         networkConfigs[ETH_SEPOLIA_CHAIN_ID] = getSepoliaEthConfig();
+        networkConfigs[BASE_SEPOLIA_CHAIN_ID] = getBaseSepoliaConfig();
+        networkConfigs[BASE_MAINNET_CHAIN_ID] = getBaseMainnetConfig();
         networkConfigs[300] = getZkSyncSepoliaConfig();
         // Note: We skip doing the local config
     }
@@ -61,6 +65,18 @@ contract HelperConfig is CodeConstants, Script {
     function getSepoliaEthConfig() public pure returns (NetworkConfig memory) {
         return NetworkConfig({
             priceFeed: 0x694AA1769357215DE4FAC081bf1f309aDC325306 // ETH / USD
+        });
+    }
+
+    function getBaseSepoliaConfig() public pure returns (NetworkConfig memory) {
+        return NetworkConfig({
+            priceFeed: 0x4aDC67696bA383F43DD60A9e78F2C97Fbbfc7cb1 // ETH / USD
+        });
+    }
+
+    function getBaseMainnetConfig() public pure returns (NetworkConfig memory) {
+        return NetworkConfig({
+            priceFeed: 0x71041dddad3595F9CEd3DcCFBe3D1F4b0a16Bb70 // ETH / USD
         });
     }
 
