@@ -252,8 +252,8 @@ function getBaseMainnetConfig() public pure returns (NetworkConfig memory) {
 ```bash
 BASE_SEPOLIA_RPC_URL=https://sepolia.base.org
 BASE_MAINNET_RPC_URL=https://mainnet.base.org
-BASESCAN_API_KEY=Your Basescan api key
-SENDER_ADDRESS=your address
+BASESCAN_API_KEY=your_basescan_api_key_here
+SENDER_ADDRESS=your_sender_address_here
 ```
 
 **Key Learning:** 

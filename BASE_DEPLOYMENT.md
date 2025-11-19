@@ -63,7 +63,7 @@ BASE_MAINNET_RPC_URL=https://mainnet.base.org
 BASESCAN_API_KEY=your_basescan_api_key_here
 
 # Wallet Configuration
-SENDER_ADDRESS=0xc5983e0b551a7c60d62177cccadf199b9eeac54b
+SENDER_ADDRESS=your_sender_address_here
 ```
 
 ### 2. 🔑 Create Encrypted Keystore
