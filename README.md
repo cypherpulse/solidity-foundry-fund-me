@@ -1,4 +1,4 @@
-# 🚀 Foundry Fund Me: Production-Ready Crowdfunding Smart Contract
+# 🚀 Foundry Fund Me
 
 > **Complete Smart Contract Development Journey with Multi-Network Deployment**
 
