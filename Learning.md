@@ -252,8 +252,8 @@ function getBaseMainnetConfig() public pure returns (NetworkConfig memory) {
 ```bash
 BASE_SEPOLIA_RPC_URL=https://sepolia.base.org
 BASE_MAINNET_RPC_URL=https://mainnet.base.org
-BASESCAN_API_KEY=KYWB47XVH11DWN3YGA9JQMSHH3YXJMJEI3
-SENDER_ADDRESS=0xc5983e0b551a7c60d62177cccadf199b9eeac54b
+BASESCAN_API_KEY=Your Basescan api key
+SENDER_ADDRESS=your address
 ```
 
 **Key Learning:** 
@@ -368,8 +368,8 @@ Submitted contract for verification:
 # Added to .env
 BASE_SEPOLIA_RPC_URL=https://sepolia.base.org
 BASE_MAINNET_RPC_URL=https://mainnet.base.org
-BASESCAN_API_KEY=KYWB47XVH11DWN3YGA9JQMSHH3YXJMJEI3
-SENDER_ADDRESS=0xc5983e0b551a7c60d62177cccadf199b9eeac54b
+BASESCAN_API_KEY=your_basescan_api_key_here
+SENDER_ADDRESS=your_sender_address_here
 ```
 
 **Keystore Creation:**
